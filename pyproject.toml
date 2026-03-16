@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "kaspersky-task"
+version = "0.1.0"
+description = ""
+authors = ["r.bagymanov <ruslanbagymanov@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.115.8"
+uvicorn = "^0.34.0"
+
+[tool.poetry.group.dev.dependencies]
+black = "^26.3.1"
+ruff = "^0.15.6"
+pytest = "^9.0.2"
+pytest-cov = "^7.0.0"
+mypy = "^1.19.1"
+pytest-deadfixtures = "^3.1.0"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
