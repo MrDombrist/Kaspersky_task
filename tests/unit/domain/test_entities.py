@@ -1,5 +1,6 @@
-from src.domain.report.entities import JobStatus, ReportJob, WordStats
 import uuid
+
+from src.domain.report.entities import JobStatus, ReportJob, WordStats
 
 
 class TestWordStats:
