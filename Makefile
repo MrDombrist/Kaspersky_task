@@ -32,3 +32,15 @@ lint: ##Checking code with linters
 .PHONY: test
 test: ##test code with coverage
 	$(TEST) tests/ --cov=src --cov-report json --cov-report term --cov-report xml:cobertura.xml
+
+.PHONY: up
+up: ## Start docker-compose stack
+	docker compose up --build -d
+
+.PHONY: down
+down: ## Stop docker-compose stack
+	docker compose down
+
+.PHONY: logs
+logs: ## Tail API logs
+	docker compose logs -f api
